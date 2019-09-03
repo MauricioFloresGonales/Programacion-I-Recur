@@ -45,3 +45,28 @@ void cargarVector(int vector[],int tam)
             }
         return maximo;
     }
+
+
+    void ordenarVector(int vector[],int tam)
+    {
+        int i;
+        int j;
+        int aux;
+
+        for(i=0;i<tam-1;i++)
+        {
+            for(j=i+1;j<tam;j++)
+            {
+                if(vector[i]>vector[j])
+                {
+                    aux = vector[i];
+                    vector[i] = vector[j];
+                    vector[j] = aux;
+                }
+            }
+        }
+        for(;;)
+        {
+            printf("%d"aux);
+        }
+    }
