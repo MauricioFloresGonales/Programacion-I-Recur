@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "vectores.h"
-
+// COMPLETAR
 
 void cargarVector(int vector[],int tam)
     {
