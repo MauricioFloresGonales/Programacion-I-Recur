@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1567426936 source:c:\users\alumno\desktop\arrays\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1567515798 source:c:\users\alumno\desktop\programacion-i-recur\clase 5\arrays (profesor)\main.c
+	<stdio.h>
+	<stdlib.h>
+	"vectores.h"
+
+1567515798 c:\users\alumno\desktop\programacion-i-recur\clase 5\arrays (profesor)\vectores.h
+
+1567515853 source:c:\users\alumno\desktop\programacion-i-recur\clase 5\arrays (profesor)\vectores.c
+	<stdio.h>
+	"vectores.h"
+
