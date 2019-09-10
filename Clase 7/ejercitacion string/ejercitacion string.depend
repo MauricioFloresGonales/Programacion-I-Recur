@@ -1,10 +1,14 @@
 # depslib dependency file v1.0
-1568122524 source:c:\users\alumno\desktop\programacion-i-recur\clase 7\ejercitacion string\funciones.c
+1568124887 source:c:\users\alumno\desktop\programacion-i-recur\clase 7\ejercitacion string\funciones.c
 	<stdio.h>
 	<string.h>
+	"funciones.h"
 
-1568122524 source:c:\users\alumno\desktop\programacion-i-recur\clase 7\ejercitacion string\main.c
+1568124831 source:c:\users\alumno\desktop\programacion-i-recur\clase 7\ejercitacion string\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+	"funciones.h"
+
+1568124197 c:\users\alumno\desktop\programacion-i-recur\clase 7\ejercitacion string\funciones.h
 
