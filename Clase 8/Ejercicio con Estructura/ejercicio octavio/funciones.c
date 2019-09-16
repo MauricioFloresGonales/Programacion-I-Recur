@@ -35,6 +35,7 @@ void MostrarAlumnos(eAlumno listadoDeAlumnos[],int cantidad)
 {
     int flag = 0;
     int i;
+    printf("\nLegajo\t\tNotas\t\tnombre\n");
     for(i=0;i<cantidad;i++)
     {
         if(listadoDeAlumnos[i].estaVacio == 0)
@@ -54,9 +55,9 @@ void MostrarAlumnos(eAlumno listadoDeAlumnos[],int cantidad)
 
 void mostrarUnAlumno(eAlumno unAlumno[],int indice)
 {
-    printf("%d\t",unAlumno[indice].nota);
-    printf("%d\t",unAlumno[indice].legajo);
-    printf("%s\n",unAlumno[indice].nombre);
+    printf("\n%d",unAlumno[indice].legajo);
+    printf("\t\t%d",unAlumno[indice].nota);
+    printf("\t\t%s\n",unAlumno[indice].nombre);
 }
 
 //----------------------------------------------------------------------------------------------------------------

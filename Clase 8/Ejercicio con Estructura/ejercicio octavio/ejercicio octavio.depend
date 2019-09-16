@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1568644957 source:c:\users\alumno\desktop\programacion-i-recur\clase 8\ejercicio con estructura\ejercicio octavio\funciones.c
+1568646960 source:c:\users\alumno\desktop\programacion-i-recur\clase 8\ejercicio con estructura\ejercicio octavio\funciones.c
 	<stdio.h>
 	<string.h>
 	"funciones.h"
 
 1568644682 c:\users\alumno\desktop\programacion-i-recur\clase 8\ejercicio con estructura\ejercicio octavio\funciones.h
 
-1568644790 source:c:\users\alumno\desktop\programacion-i-recur\clase 8\ejercicio con estructura\ejercicio octavio\main.c
+1568646780 source:c:\users\alumno\desktop\programacion-i-recur\clase 8\ejercicio con estructura\ejercicio octavio\main.c
 	<stdio.h>
 	<stdlib.h>
 	"funciones.h"
