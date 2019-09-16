@@ -1,0 +1,41 @@
+do{
+        printf("1 cargar:\n");
+        printf(" 2 mostrar todo:\n");
+        printf("3 mostrar negativos:\n");
+        printf("4 mostrar promedio de positivos:\n");
+        printf("5 mostrar maximo:\n");
+        printf("6 mostrar minimo:\n");
+        printf("7 salir:\n");
+        printf("elija una opcion:\n");
+        scanf("%d", &opcion);
+
+        switch(opcion)
+        {
+        case 1:
+
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
+        case 4:
+                
+            break;
+        case 5:
+
+
+            break;
+        case 6:
+            
+        }
+            break;
+        default:
+            printf("SALIR");
+        }
+
+    system("pause");
+    system("cls");
+
+    }while(opcion != 7);
