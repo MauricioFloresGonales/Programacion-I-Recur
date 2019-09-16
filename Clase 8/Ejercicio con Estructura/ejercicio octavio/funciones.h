@@ -9,6 +9,7 @@ typedef struct{
 
 }eAlumno;
 
+void harcodearDatos(eAlumno[],int cantidad);
 void inicializarAlumno(eAlumno[],int cantidad);
 void MostrarAlumnos(eAlumno[],int cantidad);
 void mostrarUnAlumno(eAlumno[],int indice);

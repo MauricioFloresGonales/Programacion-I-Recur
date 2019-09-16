@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "funciones.h"
-
+#define TAMANIO 5
 int main()
 {
-    eAlumno listadoDeAlumnos[5];
+    eAlumno listadoDeAlumnos[TAMANIO];
 
-    inicializarAlumno(listadoDeAlumnos,5);
-    MostrarAlumnos(listadoDeAlumnos,5);
+
+
 
     return 0;
 }
