@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1568728691 source:c:\users\alumno\desktop\programacion-i-recur\clase 9\ejercicio clase 9\main.c
+1568730373 source:c:\users\alumno\desktop\programacion-i-recur\clase 9\ejercicio clase 9\main.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
 	"funciones.h"
 
-1568728992 c:\users\alumno\desktop\programacion-i-recur\clase 9\ejercicio clase 9\funciones.h
+1568729200 c:\users\alumno\desktop\programacion-i-recur\clase 9\ejercicio clase 9\funciones.h
 	<stdio.h>
 
-1568728879 source:c:\users\alumno\desktop\programacion-i-recur\clase 9\ejercicio clase 9\funciones.c
+1568731732 source:c:\users\alumno\desktop\programacion-i-recur\clase 9\ejercicio clase 9\funciones.c
 	<stdio.h>
 	<string.h>
 	"funciones.h"

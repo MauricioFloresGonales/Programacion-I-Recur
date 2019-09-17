@@ -104,4 +104,35 @@ int dameIndiceLibre(eAlumno alumno[],int cantidad)
 
 //----------------------------------------------------------------------------------------------------------------
 
-void buscarLegajo(eAlumno[],int cantidad);
+void buscarLegajo(eAlumno[],int cantidad)
+{
+
+}
+
+
+
+//----------------------------------------------------------------------------------------------------------------
+
+void borrarAlumno(eAlumno alumno[],int cantidad)
+{
+    int legAux;
+    int i;
+    int loEncontro = 0;
+
+    do{
+        printf("igrese el legajo que quiere encontrar: ");
+        scanf("%d",&legAux);
+
+        for(i=0;i<cantidad;i++)
+        {
+            if(alumno[i].legajo = legAux && alumno[i].estaVacio == OCUPADO)
+            {
+                alumno[i].estaVacio = LIBRE;
+
+                loEncontro = 1;
+
+                break;
+            }//if
+        }//for
+    }while(loEncontro != 1);
+}

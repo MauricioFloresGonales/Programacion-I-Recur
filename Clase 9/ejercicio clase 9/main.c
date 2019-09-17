@@ -12,35 +12,41 @@ int main()
 
     int opcion;
     do{
-        printf("1- mostrar:\n");
-        printf("2- cargar:\n");
-        printf("3- buscar:\n");
-        printf("4- borrar:\n");
-        printf("5- salir:\n");
+        printf("1- Cargar datos hardcodeados\n");
+        printf("2- mostrar:\n");
+        printf("3- cargar:\n");
+        printf("4- buscar:\n");
+        printf("5- borrar:\n");
+        printf("6- salir:\n");
+
         printf("elija una opcion:\n");
         scanf("%d", &opcion);
 
         switch(opcion)
         {
         case 1:
-
             harcodearDatos(listadoDeAlumnos,5);
-            MostrarAlumnos(listadoDeAlumnos,TAMANIO);
 
             break;
         case 2:
-                ingresarDatos(listadoDeAlumnos,TAMANIO);
 
+            MostrarAlumnos(listadoDeAlumnos,TAMANIO);
 
             break;
         case 3:
 
+            ingresarDatos(listadoDeAlumnos,TAMANIO);
+
             break;
         case 4:
 
+
+
             break;
         case 5:
-
+                borrarAlumno(listadoDeAlumnos,TAMANIO);
+            break;
+        case 6:
             break;
         default:
             printf("SALIR");
@@ -49,7 +55,7 @@ int main()
     system("pause");
     system("cls");
 
-    }while(opcion != 5);
+    }while(opcion != 6);
 
 
 
