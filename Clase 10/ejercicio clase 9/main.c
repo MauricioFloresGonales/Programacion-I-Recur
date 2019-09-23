@@ -61,8 +61,5 @@ int main()
 
     }while(opcion != 7);
 
-
-
-
     return 0;
 }
