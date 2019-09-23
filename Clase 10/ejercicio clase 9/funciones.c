@@ -116,29 +116,43 @@ int buscarLegajo(eAlumno alumno[],int cantidad)
 
         for(i=0;i<cantidad;i++)
             {
-                if(alumno[i].legajo = legAux && alumno[i].estaVacio == OCUPADO)
+                if(alumno[i].legajo == legAux && alumno[i].estaVacio == OCUPADO)
                 {
+                    mostrarUnAlumno(alumno,i);
                     loEncontro = 1;
 
                     break;
                 }//if
             }//for
+
      }while(loEncontro != 1);
 
     return i;
 }
-
-
 
 //----------------------------------------------------------------------------------------------------------------
 
 void borrarAlumno(eAlumno alumno[],int cantidad)
 {
     int index;
-    int i;
-    int loEncontro = 0;
 
     index = buscarLegajo(alumno,cantidad);
 
-    alumno[i].estaVacio = LIBRE;
+    alumno[index].estaVacio = LIBRE;
+}
+
+//----------------------------------------------------------------------------------------------------------------
+
+void modificarAlumno(eAlumno alumno[],int cantidad)
+{
+    int index;
+    char nuevoNom[51];
+
+    index = buscarLegajo(alumno,cantidad);
+
+    printf("ingrese un nuevo nombre:");
+    fflush(stdin);
+    scanf("%s",nuevoNom);
+
+    strcpy(alumno[index].nombre,nuevoNom);
 }

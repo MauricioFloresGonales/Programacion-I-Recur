@@ -19,3 +19,5 @@ void mostrarUnAlumno(eAlumno[],int indice);
 int dameIndiceLibre(eAlumno[],int cantidad);//RETORNA un INDICE
 int buscarLegajo(eAlumno[],int cantidad);
 void borrarAlumno(eAlumno[],int cantidad);
+
+void modificarAlumno(eAlumno[],int cantidad);
