@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1569198526 source:c:\users\pipoca\desktop\tp 2\inputs\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Inputs.h"
+	<ctype.h>
+
+1569198449 source:c:\users\pipoca\desktop\tp 2\inputs\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	<ctype.h>
+
+1569192129 c:\users\pipoca\desktop\tp 2\inputs\inputs.h
+
