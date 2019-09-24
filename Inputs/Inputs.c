@@ -79,14 +79,12 @@ int getFloat(float* valor,char message[],char eMessage[], float lowLimit, float 
 
         if(letraAux != 0 && lowAux != 0 && hiAux != 0)
         {
-            if(charAux > lowLimit  && charAux < hiLimit)
+            if(charAux < lowLimit  || charAux > hiLimit)/**Algo Anda Mal **/
             {
-                printf("funciono \t");
+                printf("%s",eMessage);
+            }else{
                 *input = charAux;
                 retorno = 0;
-
-            }else{
-                printf("%s",eMessage);
             }//if
 
         }else{
@@ -100,8 +98,54 @@ int getFloat(float* valor,char message[],char eMessage[], float lowLimit, float 
  }
 //------------------------------------------------------------------------------------------------------------------------------------------
 
+int getOneChar(char* input,char message[],char eMessage[],char oneLimit, char twoLimit)
+{
+    int validador;
+    char charAux;
+    int retorno = -1;
 
+    while(retorno == -1)
+    {
+        printf("%s",message);
+        fflush(stdin);
+        scanf("%c",&charAux);
 
+        validador = validarUnaLetra(charAux);
+
+        if(validador == 0)
+        {
+            if(charAux == oneLimit || charAux == twoLimit)
+            {
+                *input = charAux;
+                retorno = 0;
+            }//if
+        }else{
+
+            printf("%s",eMessage);
+            fflush(stdin);
+        }//if
+    }//while
+
+    return retorno;
+}
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+int validarUnaLetra(char input)
+{
+    int lenAux;
+    int digitAux;
+    int retorno = -1;
+
+    lenAux = strlen(&input);
+    digitAux = isdigit(input);
+
+    if(lenAux == 1 && digitAux == 0)
+    {
+        retorno = 0;
+    }
+
+    return retorno;
+}
 
 //------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -155,6 +199,7 @@ int validarLetrasEnString(char palabra[],int tam)
     return retorno;
 }
 
+//------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
