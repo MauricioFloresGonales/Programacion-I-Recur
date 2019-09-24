@@ -75,7 +75,10 @@ int getFloat(float* valor,char message[],char eMessage[], float lowLimit, float 
         fflush(stdin);
         scanf("%c",&charAux);
 
-        asciiLetra = validarLetra(charAux);
+        validador = isalpha(input);
+        validador = isalpha(lowLimit);
+        validador = isalpha(hiLimit);
+
 
         asciiAuxLow = validarLetra(lowLimit);
 
@@ -103,14 +106,9 @@ int validarLetra(char letra)
      int ascii;
      int validador;
 
+
      validador = isalpha(letra);
 
-     if(validador != 0 )
-     {
-         ascii = letra;
-     }else{
-        printf("es un numnero\n");
-     }
 
      return ascii;
  }

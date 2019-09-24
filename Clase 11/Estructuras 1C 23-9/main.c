@@ -3,6 +3,15 @@
 #include "Alumno.h"
 #define A 5
 
+/**
+1- mostrar todos los alumnos con la descripcion de su localidad
+2- mostrer todas las localidades
+3- mostrar por cada localidad, todos los alumnos que viven en ella
+4- mostrar los alumnos que vivien  en avellaneda
+5- mostrar la localidad con menos habitantes
+
+*/
+
 int main()
 {
     eAlumno listaDeAlumnos[A];
@@ -36,7 +45,8 @@ int main()
 
             break;
         case 2:
-            mostrarListadoAlumnos(listaDeAlumnos, A);
+            //mostrarListadoAlumnos(listaDeAlumnos, A);
+            mostrarAlumnoConLocalidad(listaDeAlumnos,A,listaLocalidades,3);
             break;
         case 3:
             sortStudentsByNameAndAverage(listaDeAlumnos,A);

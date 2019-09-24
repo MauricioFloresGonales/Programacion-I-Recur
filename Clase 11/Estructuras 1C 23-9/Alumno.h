@@ -32,4 +32,4 @@ int eliminarAlumno(eAlumno[], int);
 int modificarAlumno(eAlumno[], int, int);
 
 int buscarAlumnoPorLegajo(eAlumno[], int, int);
-int buscarAlumnoPorLocalidad(eAlumno[],int)
+void mostrarAlumnoConLocalidad(eAlumno[],int,eLocalidad[],int);
