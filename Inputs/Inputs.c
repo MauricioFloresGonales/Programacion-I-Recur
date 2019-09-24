@@ -53,18 +53,62 @@ int getFloat(float* valor,char message[],char eMessage[], float lowLimit, float 
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------------
-/*
+
  int getChar(char* input,char message[],char eMessage[], char lowLimit, char hiLimit)
  {
+     char charAux;
+     int asciiLetra;
+     int asciiAuxLow;
+     int asciiAuxHi;
      int retorno = -1;
 
-     printf("%s".message);
-     fflush(stdin);
-     scanf("%c",input);
+    printf("%s",message);
+    //fflush(stdin);
+    //scanf("%c",&charAux);
 
+    while(retorno != 0)
+    {
+        fflush(stdin);
+        scanf("%c",&charAux);
 
-    return 0
- }*/
+        asciiLetra = validarLetra(charAux);
+
+        asciiAuxLow = validarLetra(lowLimit);
+
+        asciiAuxHi = validarLetra(hiLimit);
+
+        if(asciiLetra > asciiAuxLow  || asciiLetra < asciiAuxHi)
+        {
+            printf("%s",eMessage);
+            //fflush(stdin);
+            //scanf("%c",&charAux);
+
+        }else{
+            printf("funciono");
+            *input = charAux;
+            retorno = 0;
+        }
+    }
+
+    return 0;
+ }
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+int validarLetra(char letra)
+ {
+     int ascii;
+     int validador;
+
+     validador = isalpha(letra);
+
+     if(validador != -1 )
+     {
+         ascii = letra;
+     }
+
+     return ascii;
+ }
+
 
 //------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -82,7 +126,7 @@ int getString(char* input,char message[],char eMessage[],char eNumMessage[], int
         scanf("%s",arrAux);
         largo = strlen(arrAux);
 
-        if((validarLetras(arrAux,hiLimit+1)) == -1)
+        if((validarLetrasEnString(arrAux,hiLimit+1)) == -1)
         {
             printf("%s",eNumMessage);
 
@@ -100,7 +144,7 @@ int getString(char* input,char message[],char eMessage[],char eNumMessage[], int
     return retorno;
 }
 
-int validarLetras(char palabra[],int tam)
+int validarLetrasEnString(char palabra[],int tam)
 {
     int i;
     int validador;

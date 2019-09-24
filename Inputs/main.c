@@ -5,31 +5,18 @@
 
 int main()
 {
-
-
-
-
-    /*
-    char nombre[51];
-    int r;
-
-    r = getString(nombre,"Nombre: ","El largo debe ser entre 2 y 10\n ","solo puede ingresar letras\n ", 2, 5);
-
+    char continuar;
+    int r; // Respuesta
+    r = getChar(&continuar,"Ingrese Opcion [A][B][C]: ","Solo [A][B][C]:",'A','C');
     if(r == 0)
     {
-        printf("Nombre: %s",nombre);
-    }*/
-/*
-    int comprobar;
-    char letras [3]= {'a','a','3'};
-    comprobar = validarLetras(setras,3);
-    if(comprobar == 1 )
-    {
-        printf("hay un numero");
-    }else{
-        printf("no hay numeros");
+        printf("Continuar: %c",continuar);
     }
+/*
+    char letra = 'A';
+    int ascii;
 
-*/
+    ascii = letra;
 
+    printf("la letra %c es en ascii es %d",letra,ascii);*/
 }

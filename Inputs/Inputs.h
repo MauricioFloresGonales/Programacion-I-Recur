@@ -36,6 +36,16 @@ int getInt(int* valor,char message[],char eMessage[],int lowLimit, int hiLimit);
 
 //------------------------------------------------------------------------------------------------------------------------------------------
 
+/** \brief valida si es una letra y muestra el numero ascii que le corresponde
+ *
+ * \param letra char letra a validar
+ * \return int numero ascii de la letra
+ *
+ */
+int validarLetra(char letra);
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
 /** * \brief Solicita una cadena de caracteres al usuario y la valida
 * \param input Se carga el string ingresado
 * \param message Es el mensaje a ser mostrado
@@ -58,4 +68,4 @@ int getString(char* input,char message[],char eMessage[],char eNumMessage[], int
  * \return int Si no encontro un numero [0] si encontro un numero [-1]
  *
  */
-int validarLetras(char palabra[],int tam);
+int validarLetrasEnString(char palabra[],int tam);
