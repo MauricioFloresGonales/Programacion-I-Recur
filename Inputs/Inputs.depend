@@ -29,3 +29,18 @@
 	"Inputs.h"
 	<ctype.h>
 
+1569349305 source:c:\users\pipoca\desktop\programacion-i-recur\inputs\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Inputs.h"
+	<ctype.h>
+
+1569349920 c:\users\pipoca\desktop\programacion-i-recur\inputs\inputs.h
+
+1569350170 source:c:\users\pipoca\desktop\programacion-i-recur\inputs\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	<ctype.h>
+

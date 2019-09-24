@@ -61,57 +61,46 @@ int getFloat(float* valor,char message[],char eMessage[], float lowLimit, float 
  int getChar(char* input,char message[],char eMessage[], char lowLimit, char hiLimit)
  {
      char charAux;
-     int asciiLetra;
-     int asciiAuxLow;
-     int asciiAuxHi;
+     int letraAux;
+     int lowAux;
+     int hiAux;
      int retorno = -1;
 
     printf("%s",message);
-    //fflush(stdin);
-    //scanf("%c",&charAux);
 
     while(retorno != 0)
     {
         fflush(stdin);
         scanf("%c",&charAux);
 
-        validador = isalpha(input);
-        validador = isalpha(lowLimit);
-        validador = isalpha(hiLimit);
+        letraAux = isalpha(charAux);
+        lowAux = isalpha(lowLimit);
+        hiAux = isalpha(hiLimit);
 
-
-        asciiAuxLow = validarLetra(lowLimit);
-
-        asciiAuxHi = validarLetra(hiLimit);
-
-        if(asciiLetra < asciiAuxLow  || asciiLetra > asciiAuxHi)
+        if(letraAux != 0 && lowAux != 0 && hiAux != 0)
         {
-            printf("%s",eMessage);
-            //fflush(stdin);
-            //scanf("%c",&charAux);
+            if(charAux > lowLimit  && charAux < hiLimit)
+            {
+                printf("funciono \t");
+                *input = charAux;
+                retorno = 0;
+
+            }else{
+                printf("%s",eMessage);
+            }//if
 
         }else{
-            printf("funciono \t");
-            *input = charAux;
-            retorno = 0;
-        }
-    }
 
-    return 0;
+            printf("no puede ingresar numeros");
+
+        }//if
+    }//while
+
+    return retorno;
  }
 //------------------------------------------------------------------------------------------------------------------------------------------
 
-int validarLetra(char letra)
- {
-     int ascii;
-     int validador;
 
-
-     validador = isalpha(letra);
-
-
-     return ascii;
- }
 
 
 //------------------------------------------------------------------------------------------------------------------------------------------
