@@ -14,3 +14,18 @@
 
 1569285001 c:\users\pipoca\desktop\tp 2\inputs\inputs.h
 
+1569334034 source:c:\users\alumno\desktop\programacion-i-recur\inputs\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	<ctype.h>
+
+1569325981 c:\users\alumno\desktop\programacion-i-recur\inputs\inputs.h
+
+1569333445 source:c:\users\alumno\desktop\programacion-i-recur\inputs\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Inputs.h"
+	<ctype.h>
+

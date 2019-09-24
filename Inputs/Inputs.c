@@ -11,10 +11,12 @@ int getInt(int* valor, char message[],char eMessage[], int lowLimit, int hiLimit
     int validador = -1;
 
     printf("%s", message);
-    scanf("%d", valor);
+
 
     while(validador == -1)
     {
+        scanf("%d", valor);
+
         if(*valor<lowLimit || *valor>hiLimit)
         {
             printf("Error, %s", eMessage);
@@ -36,10 +38,12 @@ int getFloat(float* valor,char message[],char eMessage[], float lowLimit, float 
     int validador = -1;
 
     printf("%s", message);
-    scanf("%f", valor);
+
 
     while(validador == -1)
     {
+        scanf("%f", valor);
+
         if(*valor<lowLimit || *valor>hiLimit)
         {
             printf("Error, %s ", eMessage);
@@ -77,14 +81,14 @@ int getFloat(float* valor,char message[],char eMessage[], float lowLimit, float 
 
         asciiAuxHi = validarLetra(hiLimit);
 
-        if(asciiLetra > asciiAuxLow  || asciiLetra < asciiAuxHi)
+        if(asciiLetra < asciiAuxLow  || asciiLetra > asciiAuxHi)
         {
             printf("%s",eMessage);
             //fflush(stdin);
             //scanf("%c",&charAux);
 
         }else{
-            printf("funciono");
+            printf("funciono \t");
             *input = charAux;
             retorno = 0;
         }
@@ -101,9 +105,11 @@ int validarLetra(char letra)
 
      validador = isalpha(letra);
 
-     if(validador != -1 )
+     if(validador != 0 )
      {
          ascii = letra;
+     }else{
+        printf("es un numnero\n");
      }
 
      return ascii;

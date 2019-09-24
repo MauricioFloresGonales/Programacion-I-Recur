@@ -6,17 +6,10 @@
 
 typedef struct
 {
-
-    int dia;
-    int mes;
-    int anio;
-} eFecha;
-
-typedef struct
-{
     int idLocalidad;
     char localidad[30];
     int codigoPostal;
+
 } eLocalidad;
 typedef struct
 {
@@ -39,3 +32,4 @@ int eliminarAlumno(eAlumno[], int);
 int modificarAlumno(eAlumno[], int, int);
 
 int buscarAlumnoPorLegajo(eAlumno[], int, int);
+int buscarAlumnoPorLocalidad(eAlumno[],int)

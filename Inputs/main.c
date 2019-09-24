@@ -5,6 +5,8 @@
 
 int main()
 {
+
+
     char continuar;
     int r; // Respuesta
     r = getChar(&continuar,"Ingrese Opcion [A][B][C]: ","Solo [A][B][C]:",'A','C');
