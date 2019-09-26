@@ -86,12 +86,7 @@ int getFloat(float* valor,char message[],char eMessage[], float lowLimit, float 
                 *input = charAux;
                 retorno = 0;
             }//if
-
-        }else{
-
-            printf("no puede ingresar numeros");
-
-        }//if
+        }
     }//while
 
     return retorno;
@@ -104,13 +99,17 @@ int getOneChar(char* input,char message[],char eMessage[],char oneLimit, char tw
     char charAux;
     int retorno = -1;
 
+    printf("%s",message);
+
     while(retorno == -1)
     {
-        printf("%s",message);
+
         fflush(stdin);
         scanf("%c",&charAux);
 
         validador = validarUnaLetra(charAux);
+
+        printf("el validador esta en: %d\n",validador);
 
         if(validador == 0)
         {
@@ -118,7 +117,7 @@ int getOneChar(char* input,char message[],char eMessage[],char oneLimit, char tw
             {
                 *input = charAux;
                 retorno = 0;
-            }//if
+            }else{ printf("el if te dio mal\n");}
         }else{
 
             printf("%s",eMessage);
@@ -132,17 +131,20 @@ int getOneChar(char* input,char message[],char eMessage[],char oneLimit, char tw
 
 int validarUnaLetra(char input)
 {
+    char letraAux[10];
     int lenAux;
-    int digitAux;
+    int alphaAux;
     int retorno = -1;
 
-    lenAux = strlen(&input);
-    digitAux = isdigit(input);
+    letraAux[0] = input;
 
-    if(lenAux == 1 && digitAux == 0)
+    lenAux = strlen(letraAux);
+    alphaAux = isalpha(input);
+
+    if(lenAux == 1 && alphaAux != 0)
     {
         retorno = 0;
-    }
+    }else{ printf("algo esta mal\n");}
 
     return retorno;
 }
