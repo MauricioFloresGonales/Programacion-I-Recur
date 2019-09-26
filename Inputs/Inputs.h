@@ -56,7 +56,10 @@ int getOneChar(char* input,char message[],char eMessage[],char oneLimit, char tw
  * \return int si solo se ingreseo una letra [0] si no [-1]
  *
  */
-int validarUnaLetra(char input);
+//int validarUnaLetra(char input);
+
+int validarUnaLetra(char *input);
+
 
 //------------------------------------------------------------------------------------------------------------------------------------------
 
