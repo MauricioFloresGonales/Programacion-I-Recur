@@ -58,6 +58,27 @@ int getFloat(float* valor,char message[],char eMessage[], float lowLimit, float 
 
 //------------------------------------------------------------------------------------------------------------------------------------------
 
+int getChar(char* input,char message[],char eMessage[], char lowLimit, char hiLimit)
+ {
+    int retorno;
+
+    printf("%s",message);
+    fflush(stdin);
+    scanf("%c",input);
+
+    if(*input < lowLimit  || *input> hiLimit)
+    {
+        printf("%s",eMessage);
+        retorno = -1;
+    }else{
+        retorno = 0;
+    }//if
+
+    return retorno;
+ }
+
+/*
+
  int getChar(char* input,char message[],char eMessage[], char lowLimit, char hiLimit)
  {
      char charAux[5];
@@ -83,7 +104,7 @@ int getFloat(float* valor,char message[],char eMessage[], float lowLimit, float 
         {
             printf("entro al primer if\n");
             if(charAux[0] < lowLimit  || charAux[0] > hiLimit)/**Algo Anda Mal **/
-            {
+      /*     {
                 printf("entro al segundo if\n");
                 printf("%s",eMessage);
             }else{
@@ -96,43 +117,30 @@ int getFloat(float* valor,char message[],char eMessage[], float lowLimit, float 
     }//while
 
     return retorno;
- }
+ }*/
 //------------------------------------------------------------------------------------------------------------------------------------------
 
 int getOneChar(char* input,char message[],char eMessage[],char oneLimit, char twoLimit)
 {
-    int validador;
+    int opcion;
     int retorno = -1;
-    char charAux[10];
 
-    printf("%s",message);
-
-    while(retorno == -1)
-    {
-
+    do{
+        printf("%s",message);
         fflush(stdin);
-        scanf("%s",charAux);
+        scanf("%s",input);
+        opcion = confirmar();
 
-        validador = validarUnaLetra(charAux);
+    }while(opcion != 0);
 
-        if(validador == 0)
-        {
-            if(charAux[0] == oneLimit || charAux[0] == twoLimit)
-            {
-                retorno = 0;
+    if(*input == oneLimit || *input == twoLimit)
+    {
+        retorno = 0;
 
-            }else{
-                    printf("%s",eMessage);
-                 }
-        }else{
-
-            printf("%s",eMessage);
-            fflush(stdin);
-
-        }//if
-    }//while
-
-    *input = charAux[0];
+    }else{
+        printf("%s",eMessage);
+        retorno= -1;
+    }//if
 
     return retorno;
 }
@@ -142,25 +150,55 @@ int getOneChar(char* input,char message[],char eMessage[],char oneLimit, char tw
 int validarUnaLetra(char* input)
 {
     char letraAux;
-    int lenAux;
     int alphaAux;
     int retorno;
 
     letraAux = *input;
-
-    lenAux = strlen(input);
     alphaAux = isalpha(letraAux);
 
-    if(lenAux == 1 && alphaAux != 0)
+    if(alphaAux != 0)
     {
         retorno = 0;
     }else{
         retorno = -1;
-
     }
 
     return retorno;
 
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+int confirmar()
+{
+    int retorno;
+    char letra;
+
+    do{
+        printf("Continuar: S -- Cancelar: N\n\n");
+        fflush(stdin);
+        //scanf("%c",&letra);
+        letra = getch();
+        //letra = getch();//------ En windows la funcion se escribe: int getch(void);
+        //letra = getchar();//------ En Linux int getchar(void);
+        letra = tolower(letra);
+
+
+        if(letra == 's')
+        {
+            retorno = 0;
+        }else if(letra == 'n')
+            {
+                retorno = 1;
+
+            }else{
+
+                retorno = -1;
+
+                }
+    }while(retorno == -1);
+
+    return retorno;
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------------
