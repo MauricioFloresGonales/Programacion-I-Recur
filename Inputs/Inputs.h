@@ -24,6 +24,18 @@ int getInt(int* valor,char message[],char eMessage[],int lowLimit, int hiLimit);
 
 //------------------------------------------------------------------------------------------------------------------------------------------
 
+
+/** \brief valida que lo que se ingresa se un  numero
+ *
+ * \param input numero a validar
+ * \return int si solo se ingreseo una numero [0] si no [-1]
+ *
+ */
+
+int validarNumero(char* numeroChar);
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
 /** * \brief Solicita un caracter al usuario y lo valida
 * \param input Se carga el caracter ingresado
 * \param message Es el mensaje a ser mostrado
@@ -32,6 +44,7 @@ int getInt(int* valor,char message[],char eMessage[],int lowLimit, int hiLimit);
 * \param hiLimit Limite superior a validar
 * \return Si obtuvo el caracter [0] si no [-1]
 * */
+
  int getChar(char* input,char message[],char eMessage[], char lowLimit, char hiLimit);
 
 //------------------------------------------------------------------------------------------------------------------------------------------
@@ -49,19 +62,6 @@ int getInt(int* valor,char message[],char eMessage[],int lowLimit, int hiLimit);
 int getOneChar(char* input,char message[],char eMessage[],char oneLimit, char twoLimit);
 
 //------------------------------------------------------------------------------------------------------------------------------------------
-
-/** \brief valida que solo sea una letra y que no sea un numero
- *
- * \param input Letra a validar
- * \return int si solo se ingreseo una letra [0] si no [-1]
- *
- */
-//int validarUnaLetra(char input);
-
-int validarUnaLetra(char *input);
-
-//------------------------------------------------------------------------------------------------------------------------------------------
-
 
 /** \brief Muestra dos opciones para verificar que el dato ingresado es el correcto ingresanddo
             's' si el dato es correcto o 'n' si el dato es incorrecto.
@@ -100,4 +100,12 @@ int validarLetrasEnString(char palabra[],int tam);
 
 //------------------------------------------------------------------------------------------------------------------------------------------
 
-
+/** * \brief Solicita una cadena de caracteres al usuario y la valida haceptando numeros en la palabra
+* \param input Se carga el string ingresado
+* \param message Es el mensaje a ser mostrado
+* \param eMessage Es el mensaje a ser mostrado en caso de error al pasar los limites
+* \param lowLimit Longitud mínima de la cadena
+* \param hiLimit Longitud máxima de la cadena
+* \return Si obtuvo la cadena [0] si no [-1]
+*/
+int getStringWithNums(char* input,char message[],char eMessage[],int lowLimit, int hiLimit);
