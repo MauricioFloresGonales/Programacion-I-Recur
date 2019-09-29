@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1568681330 source:c:\users\alumno\desktop\estructuras\alumno.c
+	"Alumno.h"
+
+1568682371 c:\users\alumno\desktop\estructuras\alumno.h
+	<stdio.h>
+
+1568682371 source:c:\users\alumno\desktop\estructuras\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Alumno.h"
+
+1568724480 source:c:\users\alumno\desktop\estructuras 1g\alumno.c
+	"Alumno.h"
+
+1568723727 c:\users\alumno\desktop\estructuras 1g\alumno.h
+	<stdio.h>
+
+1568724480 source:c:\users\alumno\desktop\estructuras 1g\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Alumno.h"
+
+1569241863 source:c:\users\alumno\desktop\estructuras 1c\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Alumno.h"
+
+1569250386 c:\users\alumno\desktop\estructuras 1c\alumno.h
+	<stdio.h>
+	<string.h>
+
+1569250681 source:c:\users\alumno\desktop\estructuras 1c\alumno.c
+	"Alumno.h"
+
+1569337187 source:c:\users\alumno\desktop\programacion-i-recur\clase 11\estructuras 1c 23-9\alumno.c
+	"Alumno.h"
+
+1569336176 c:\users\alumno\desktop\programacion-i-recur\clase 11\estructuras 1c 23-9\alumno.h
+	<stdio.h>
+	<string.h>
+
+1569336176 source:c:\users\alumno\desktop\programacion-i-recur\clase 11\estructuras 1c 23-9\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Alumno.h"
+
+1569856997 source:c:\users\alumno\desktop\programacion-i-recur\clase 12\estructuras 1c 24-9\alumno.c
+	"Alumno.h"
+	"localidades.h"
+
+1569857128 c:\users\alumno\desktop\programacion-i-recur\clase 12\estructuras 1c 24-9\alumno.h
+	"localidades.h"
+
+1569857108 c:\users\alumno\desktop\programacion-i-recur\clase 12\estructuras 1c 24-9\localidades.h
+	"Alumno.h"
+
