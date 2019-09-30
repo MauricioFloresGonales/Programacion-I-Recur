@@ -3,6 +3,7 @@
 #include <string.h>
 #include "Inputs.h"
 #include <ctype.h>
+#include <conio.h>
 
 
 int getInt(int* valor, char message[],char eMessage[], int lowLimit, int hiLimit)
@@ -170,12 +171,10 @@ int confirmar()
     do{
         printf("Continuar: 'S' -- Cancelar: 'N'\n\n");
         fflush(stdin);
-        //scanf("%c",&letra);
         letra = getch();
         //letra = getch();//------ En windows la funcion se escribe: int getch(void);
         //letra = getchar();//------ En Linux int getchar(void);
         letra = tolower(letra);
-
 
         if(letra == 's')
         {
