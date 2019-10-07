@@ -34,23 +34,24 @@
 	"Inputs.h"
 	<ctype.h>
 
-1569714121 source:c:\users\pipoca\desktop\programacion-i-recur\inputs\main.c
+1570488027 source:c:\users\pipoca\desktop\programacion-i-recur\inputs\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"Inputs.h"
 	<ctype.h>
 
-1569782630 c:\users\pipoca\desktop\programacion-i-recur\inputs\inputs.h
+1570488443 c:\users\pipoca\desktop\programacion-i-recur\inputs\inputs.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 
-1569714105 source:c:\users\pipoca\desktop\programacion-i-recur\inputs\inputs.c
+1570488255 source:c:\users\pipoca\desktop\programacion-i-recur\inputs\inputs.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"Inputs.h"
 	<ctype.h>
+	<conio.h>
 
