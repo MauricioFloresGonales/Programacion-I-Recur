@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1571756746 source:c:\users\alumno\desktop\programacion-i-recur\clase 15\memoria dinamica - segunda parte\main.c
+	"persona.h"
+
+1571757635 c:\users\alumno\desktop\programacion-i-recur\clase 15\memoria dinamica - segunda parte\persona.h
+	<stdio.h>
+	<stdlib.h>
+
+1571757635 source:c:\users\alumno\desktop\programacion-i-recur\clase 15\memoria dinamica - segunda parte\persona.c
+	"persona.h"
+
