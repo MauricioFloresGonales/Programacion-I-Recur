@@ -110,7 +110,7 @@ static int addNode(LinkedList* lista, int nodeIndex,void* pElement)
             aux = aux->pNextNode;
             if(aux==NULL)
             {
-               puntero = (Node*)malloc(sizeof(Node));
+               puntero = (Node*)malloc(sizeof(node));
                lista->pFirstNode = puntero;
                pNodo->pElement=pElement;
                pNodo->pNextNode = NULL;
