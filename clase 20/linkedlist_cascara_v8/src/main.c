@@ -28,10 +28,10 @@ int main(void)
 {
         //startTesting(1);  // ll_newLinkedList
         //startTesting(2);  // ll_len
-        startTesting(3);  // getNode - test_getNode//
+        //startTesting(3);  // getNode - test_getNode//
        // startTesting(4);  // addNode - test_addNode*///
-       /*    startTesting(5);  // ll_add//llama al addnote(busca donde enganchar el elemento)
-        startTesting(6);  // ll_get
+        startTesting(5);  // ll_add//llama al addnote(busca donde enganchar el elemento)
+        /*startTesting(6);  // ll_get
         startTesting(7);  // ll_set//creo un nuevo nodo/ese nodo apunta al nuevo dato y desengancho el nodo anterior de la lista y loenlaso con el nmuevo nodo creado(si es el ultimo elemento llamo a add)
         startTesting(8);  // ll_remove//saca el nodo a sacar y encgancho los nodos separados
         startTesting(9);  // ll_clear//hacer un free desde el ultimo nodo al primero(sabiendo que la lista tiene que seguir la lista en la misma posicion de memoria pero vacia)

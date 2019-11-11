@@ -230,18 +230,9 @@
 	<stdlib.h>
 	<string.h>
 
-1573481088 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\src\linkedlist.c
+1573484631 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\src\linkedlist.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../inc/LinkedList.h"
-
-1573477631 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\src\main.c
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	"../testing/inc/main_test.h"
-	"../inc/LinkedList.h"
-
-1573477205 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\main_test.h
 
