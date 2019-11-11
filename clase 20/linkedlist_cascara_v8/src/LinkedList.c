@@ -55,6 +55,22 @@ int ll_len(LinkedList* lista)
  */
 static Node* getNode(LinkedList* this, int nodeIndex)
 {
+    int retorno = NULL;
+    int nodo;
+    if(this!=NULL)
+    {
+        nodo = this.pFirstNode;
+
+        while(nodo!=NULL)
+        {
+            if(nodo == )
+            {
+                retorno = ;
+                break;
+            }
+            nodo =;
+        }
+    }
     return NULL;
 }
 
