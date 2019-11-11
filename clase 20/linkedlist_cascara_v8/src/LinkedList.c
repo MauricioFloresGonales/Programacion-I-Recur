@@ -53,25 +53,21 @@ int ll_len(LinkedList* lista)
                         (pNode) Si funciono correctamente
  *
  */
-static Node* getNode(LinkedList* this, int nodeIndex)
+static Node* getNode(LinkedList* lista, int nodeIndex)
 {
-    int retorno = NULL;
-    int nodo;
-    if(this!=NULL)
-    {
-        nodo = this.pFirstNode;
+    Node* pNodo = NULL;
+    int len = ll_len(lista);
+    int i;
 
-        while(nodo!=NULL)
+    if(lista!=NULL && len>=0 && nodeIndex > -1)
+    {
+        pNodo = lista->pFirstNode;
+        for(i=0;i<nodeIndex;i++)
         {
-            if(nodo == )
-            {
-                retorno = ;
-                break;
-            }
-            nodo =;
+            pNodo = pNodo->pNextNode;
         }
     }
-    return NULL;
+    return pNodo;
 }
 
 /** \brief  Permite realizar el test de la funcion getNode la cual es privada
