@@ -98,30 +98,38 @@ static int addNode(LinkedList* lista, int nodeIndex,void* pElement)
 {
     Node* anterior = NULL;
     Node* nuevo = NULL;
+    Node* actual = NULL;
     int returnAux = -1;
-    int len = ll_len(lista);
+    int len;
 
-    if(lista!=NULL && pElement!=NULL && (nodeIndex>-1 && len>=nodeIndex))
+    if(lista!=NULL && pElement!=NULL)
     {
-        anterior = getNode(lista,nodeIndex-1);
+        len = ll_len(lista);
 
-        nuevo = (Node*)malloc(sizeof(Node));
-
-        if(anterior == NULL)
+        if(nodeIndex>-1 && len>=nodeIndex)
         {
-            //anterior->pNextNode = nuevo;
-            nuevo = anterior->pNextNode;
-            nuevo->pNextNode = NULL;
+            nuevo = (Node*)malloc(sizeof(Node));
+            nuevo->pElement = pElement;
 
-        }else{
-            nuevo->pNextNode = anterior->pNextNode;
-            nuevo = anterior->pNextNode;
+            if(lista->pFirstNode == NULL)
+            {
+                lista->pFirstNode = nuevo;
+                nuevo->pElement = pElement;
+            }else{
+                anterior = getNode(lista,nodeIndex-1);
+
+                if(anterior->pNextNode == NULL)
+                {
+                    anterior->pNextNode = nuevo;
+                    nuevo->pNextNode = NULL;
+                }else{
+                    actual = getNode(lista,nodeIndex);
+                    anterior->pNextNode = actual;
+                }
+            }
+            lista->size++;
         }
-
-        nuevo->pElement = pElement;
-        lista->size++;
     }
-
     return returnAux;
 }
 
@@ -149,22 +157,7 @@ int test_addNode(LinkedList* this, int nodeIndex,void* pElement)
  */
 int ll_add(LinkedList* lista, void* pElement)
 {
-    Node* actual;
-    int len = ll_len(lista);
-    int i;
     int returnAux = -1;
-
-    actual = lista->pFirstNode;
-
-    for(i=0;i<len;i++)
-    {
-        if(actual==NULL)
-        {
-            returnAux = addNode(lista,i,pElement);
-        }
-        actual = actual->pNextNode;
-
-    }
 
     return returnAux;
 }
