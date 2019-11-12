@@ -59,9 +59,10 @@ static Node* getNode(LinkedList* lista, int nodeIndex)
     int len = ll_len(lista);
     int i;
 
-    if(lista!=NULL && len>=0 && nodeIndex>-1 && len>=nodeIndex)
+    if(lista!=NULL && nodeIndex<len && nodeIndex>-1)
     {
         pNodo = lista->pFirstNode;
+
         for(i=0;i<nodeIndex;i++)
         {
             pNodo = pNodo->pNextNode;
@@ -95,27 +96,25 @@ Node* test_getNode(LinkedList* this, int nodeIndex)
  */
 static int addNode(LinkedList* lista, int nodeIndex,void* pElement)
 {
-    Node* aux = NULL;
     Node* pNodo = NULL;
+    Node* aux = NULL;
     int returnAux = -1;
     int len = ll_len(lista);
     int i;
-    int puntero;
 
     if(lista!=NULL && nodeIndex>-1 && pElement!=NULL && len>=nodeIndex)
     {
         aux = lista->pFirstNode;
-        for(i=0;i<len;i++)
+
+        for(i=0;i<nodeIndex-1;i++)
         {
             aux = aux->pNextNode;
-            if(aux==NULL)
-            {
-               puntero = (Node*)malloc(sizeof(node));
-               lista->pFirstNode = puntero;
-               pNodo->pElement=pElement;
-               pNodo->pNextNode = NULL;
-            }
         }
+        aux->pNextNode = getNode(lista,nodeIndex);
+       pNodo->pElement = pElement;
+       pNodo->pNextNode = NULL;
+
+       returnAux = 0;
     }
 
     return returnAux;
