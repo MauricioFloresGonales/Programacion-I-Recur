@@ -98,36 +98,32 @@ static int addNode(LinkedList* lista, int nodeIndex,void* pElement)
 {
     Node* anterior = NULL;
     Node* nuevo = NULL;
-    Node* actual = NULL;
     int returnAux = -1;
-    int len;
 
-    if(lista!=NULL && pElement!=NULL)
+    if(lista!=NULL && nodeIndex>=0 && nodeIndex<=ll_len(lista))
     {
-        len = ll_len(lista);
-
-        if(nodeIndex>-1 && len>=nodeIndex)
+        anterior = (Node*)malloc(sizeof(Node));
+        if(anterior != NULL)
         {
-            nuevo = (Node*)malloc(sizeof(Node));
-            nuevo->pElement = pElement;
-
-            if(lista->pFirstNode == NULL)
+            anterior->pElement=pElement;
+            if(nodeIndex==0)
             {
-                lista->pFirstNode = nuevo;
-                nuevo->pElement = pElement;
+                anterior->pNextNode = lista->pFirstNode;
+                lista->pFirstNode = anterior;
+                lista->size++;
+                returnAux = 0;
             }else{
-                anterior = getNode(lista,nodeIndex-1);
+                nuevo = getNode(lista,nodeIndex);
 
-                if(anterior->pNextNode == NULL)
+                if(nuevo != NULL)
                 {
-                    anterior->pNextNode = nuevo;
-                    nuevo->pNextNode = NULL;
-                }else{
-                    actual = getNode(lista,nodeIndex);
-                    anterior->pNextNode = actual;
+                    anterior->pNextNode = nuevo->pNextNode;
+                    nuevo->pNextNode = anterior;
+                    lista->size++;
+                    returnAux = 0;
                 }
+
             }
-            lista->size++;
         }
     }
     return returnAux;
@@ -158,7 +154,18 @@ int test_addNode(LinkedList* this, int nodeIndex,void* pElement)
 int ll_add(LinkedList* lista, void* pElement)
 {
     int returnAux = -1;
+    int len;
+    int i;
 
+    if(lista!=NULL)
+    {
+        len = ll_len(lista);
+        for(i=0;i<len;i++)
+        {
+           returnAux = addNode(lista,i,pElement);
+
+        }
+    }
     return returnAux;
 }
 
@@ -189,8 +196,26 @@ void* ll_get(LinkedList* this, int index)
  */
 int ll_set(LinkedList* this, int index,void* pElement)
 {
+    Node* pNode = NULL;
+    Node* nuevo = NULL;
+    Node* anterior = NULL;
     int returnAux = -1;
 
+    if(this!=NULL && index<0 && index<ll_len(this))
+    {
+        nuevo = (Node*)malloc(sizeof(Node));
+        if(nuevo!=NULL)
+        {
+            anterior = getNode(this,index-1);
+            pNode = getNode(this,index);
+
+            anterior->pNextNode = nuevo;
+            nuevo->pElement = pElement;
+            nuevo->pNextNode = pNode->pNextNode;
+            //free(pNode);Tendria que liberar la dirreccion de memoria del nodo que ya no tengo enlazado??
+            returnAux = 0;
+        }
+    }
     return returnAux;
 }
 
@@ -205,7 +230,30 @@ int ll_set(LinkedList* this, int index,void* pElement)
  */
 int ll_remove(LinkedList* this,int index)
 {
+    Node* anterior = NULL;
+    Node* pNode = NULL;
+    Node* siguiente = NULL;
     int returnAux = -1;
+    int len;
+
+    if(this!=NULL && index>=0)
+    {
+        len = ll_len(this);
+        if(index<=len)
+        {
+            anterior = getNode(this,index-1);
+            pNode = getNode(this,index);
+            if(pNode->pNextNode==NULL)
+            {
+                anterior->pNextNode=NULL;
+                returnAux = 0;
+            }else{
+                siguiente = getNode(this,index+1);
+                anterior->pNextNode = siguiente;
+                returnAux = 0;
+            }
+        }
+    }
 
     return returnAux;
 }
