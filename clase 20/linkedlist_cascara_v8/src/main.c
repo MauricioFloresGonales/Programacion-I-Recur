@@ -26,14 +26,13 @@
 
 int main(void)
 {
-        startTesting(1);  // ll_newLinkedList //bien
-        startTesting(2);  // ll_len   //bien
-        startTesting(3);  // getNode - test_getNode//   //bien
-        startTesting(4);  // addNode - test_addNode*///   MAL
-
-
-        //startTesting(5);  // ll_add//llama al addnote(busca donde enganchar el elemento)   //MAL
-        //startTesting(6);  // ll_get   //MAL
+   /// demiandes@gmail.com
+        //startTesting(1);  // ll_newLinkedList //bien
+        //startTesting(2);  // ll_len   //bien
+        //startTesting(3);  // getNode - test_getNode//   //bien
+        //startTesting(4);  // addNode - test_addNode*///   BIEN
+        //startTesting(5);  // ll_add//llama al addnote(busca donde enganchar el elemento)   //BIEN
+        startTesting(6);  // ll_get   //MAL-- se tiene que hacer ??
         //startTesting(7);  // ll_set//MAL//creo un nuevo nodo/ese nodo apunta al nuevo dato y desengancho el nodo anterior de la lista y lo enlaso con el nmuevo nodo creado(si es el ultimo elemento llamo a add)
         //startTesting(8);  // ll_remove//MAL//saca el nodo a sacar y encgancho los nodos separados
         //startTesting(9);  // ll_clear//MAL//hacer un free desde el ultimo nodo al primero(sabiendo que la lista tiene que seguir la lista en la misma posicion de memoria pero vacia)

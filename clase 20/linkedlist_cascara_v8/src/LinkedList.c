@@ -98,7 +98,6 @@ static int addNode(LinkedList* lista, int nodeIndex,void* pElement)
 {
     Node* anterior = NULL;
     Node* nuevo = NULL;
-    Node* actual = NULL;
     int returnAux = -1;
     int len;
 
@@ -136,39 +135,8 @@ static int addNode(LinkedList* lista, int nodeIndex,void* pElement)
 
         returnAux=0;
     }
+
     return returnAux;
-
-    /*Node* anterior = NULL;
-    Node* nuevo = NULL;
-    int returnAux = -1;
-
-    if(lista!=NULL && nodeIndex>=0 && nodeIndex<=ll_len(lista))
-    {
-        anterior = (Node*)malloc(sizeof(Node));
-        if(anterior != NULL)
-        {
-            anterior->pElement=pElement;
-            if(nodeIndex==0)
-            {
-                anterior->pNextNode = lista->pFirstNode;
-                lista->pFirstNode = anterior;
-                lista->size++;
-                returnAux = 0;
-            }else{
-                nuevo = getNode(lista,nodeIndex);
-
-                if(nuevo != NULL)
-                {
-                    anterior->pNextNode = nuevo->pNextNode;
-                    nuevo->pNextNode = anterior;
-                    lista->size++;
-                    returnAux = 0;
-                }
-
-            }
-        }
-    }
-    return returnAux;*/
 }
 
 /** \brief Permite realizar el test de la funcion addNode la cual es privada
@@ -196,17 +164,10 @@ int test_addNode(LinkedList* this, int nodeIndex,void* pElement)
 int ll_add(LinkedList* lista, void* pElement)
 {
     int returnAux = -1;
-    int len;
-    int i;
 
     if(lista!=NULL)
     {
-        len = ll_len(lista);
-        for(i=0; i<len; i++)
-        {
-            returnAux = addNode(lista,i,pElement);
-
-        }
+        returnAux=addNode(lista,ll_len(lista),pElement);//Que pasa si agrego un elemento a la mitad de la lista?? esto aria que mi lista se ingrementara por uno??
     }
     return returnAux;
 }
@@ -221,11 +182,15 @@ int ll_add(LinkedList* lista, void* pElement)
  */
 void* ll_get(LinkedList* this, int index)
 {
-    void* returnAux = NULL;
 
-    return returnAux;
+    void* retorno = NULL;
+    if(this != NULL && index >-1 && index<=ll_len(this))
+    {
+        printf("\n\n///////%d ",getNode(this,index));
+    }
+
+  return retorno;
 }
-
 
 /** \brief Modifica un elemento de la lista
  *
@@ -238,24 +203,41 @@ void* ll_get(LinkedList* this, int index)
  */
 int ll_set(LinkedList* this, int index,void* pElement)
 {
-    Node* pNode = NULL;
     Node* nuevo = NULL;
-    Node* anterior = NULL;
+    Node* anterior = NULL;//free(pNode);Tendria que liberar la dirreccion de memoria del nodo que ya no tengo enlazado??
+    int len;
     int returnAux = -1;
 
-    if(this!=NULL && index<0 && index<ll_len(this))
+    if(this!=NULL)
     {
-        nuevo = (Node*)malloc(sizeof(Node));
-        if(nuevo!=NULL)
-        {
-            anterior = getNode(this,index-1);
-            pNode = getNode(this,index);
+        len = ll_len(this);
 
-            anterior->pNextNode = nuevo;
+        if(index>-1 && len>index)
+        {
+            nuevo = (Node*)malloc(sizeof(Node));
             nuevo->pElement = pElement;
-            nuevo->pNextNode = pNode->pNextNode;
-            //free(pNode);Tendria que liberar la dirreccion de memoria del nodo que ya no tengo enlazado??
-            returnAux = 0;
+
+            if(this->pFirstNode == NULL)
+            {
+                addNode(this,index,pElement);
+            }
+            else
+            {
+                if(index == 0)
+                {
+                    nuevo->pNextNode = this->pFirstNode->pNextNode;
+                    free(this->pFirstNode);
+                    this->pFirstNode = nuevo;
+                }
+                else
+                {
+                    anterior = getNode(this,index-1);
+                    nuevo->pNextNode = anterior->pNextNode->pNextNode;
+                    free(anterior->pNextNode);
+                    anterior->pNextNode = nuevo;
+                }
+            }
+            returnAux=0;
         }
     }
     return returnAux;
