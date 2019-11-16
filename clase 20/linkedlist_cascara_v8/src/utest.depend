@@ -245,7 +245,7 @@
 	<string.h>
 	"../inc/LinkedList.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\addnodetest.c
+1573923921 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\addnodetest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -253,13 +253,13 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\utest.h
+1573919138 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\utest.h
 
-1573573736 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\inc\linkedlist.h
+1573919135 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\inc\linkedlist.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\employee.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\employee.h
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\addtest.c
+1573919137 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\addtest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -267,7 +267,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\cleartest.c
+1573919137 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\cleartest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -275,7 +275,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\clonetest.c
+1573919137 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\clonetest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -283,7 +283,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\containsalltest.c
+1573919137 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\containsalltest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -291,7 +291,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\containstest.c
+1573919137 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\containstest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -299,7 +299,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\deletelinkedlisttest.c
+1573919137 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\deletelinkedlisttest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -307,13 +307,13 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\employee.c
+1573919136 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\employee.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\getnodetest.c
+1573919137 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\getnodetest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -321,7 +321,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\gettest.c
+1573919137 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\gettest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -329,7 +329,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\indexoftest.c
+1573919137 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\indexoftest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -337,7 +337,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\isemptytest.c
+1573919137 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\isemptytest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -345,7 +345,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\lentest.c
+1573919138 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\lentest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -353,7 +353,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\main_test.c
+1573919138 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\main_test.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -377,60 +377,52 @@
 	"../inc/containsAllTest.h"
 	"../inc/sortTest.h"
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\newtest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\newtest.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\addtest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\addtest.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\getnodetest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\getnodetest.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\addnodetest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\addnodetest.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\deletelinkedlisttest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\deletelinkedlisttest.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\lentest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\lentest.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\gettest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\gettest.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\containstest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\containstest.h
 
-1573570266 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\settest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\settest.h
 
-1573570266 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\removetest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\removetest.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\cleartest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\cleartest.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\clonetest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\clonetest.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\pushtest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\pushtest.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\indexoftest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\indexoftest.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\isemptytest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\isemptytest.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\poptest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\poptest.h
 
-1573570266 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\sublisttest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\sublisttest.h
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\containsalltest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\containsalltest.h
 
-1573570266 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\sorttest.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\sorttest.h
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\newtest.c
+1573919138 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\newtest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../../inc/LinkedList.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\poptest.c
-	"../../testing/utest.h"
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	"../../inc/LinkedList.h"
-	"../../testing/inc/Employee.h"
-
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\pushtest.c
+1573919138 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\poptest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -438,7 +430,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\removetest.c
+1573919138 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\pushtest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -446,7 +438,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\settest.c
+1573919138 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\removetest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -454,7 +446,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\sorttest.c
+1573919138 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\settest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -462,7 +454,7 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\sublisttest.c
+1573919138 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\sorttest.c
 	"../../testing/utest.h"
 	<stdio.h>
 	<stdlib.h>
@@ -470,22 +462,30 @@
 	"../../inc/LinkedList.h"
 	"../../testing/inc/Employee.h"
 
-1573570266 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\utest.c
+1573919138 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\src\sublisttest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1573919138 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\utest.c
 	"utest.h"
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1573571532 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\src\main.c
+1573923028 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\src\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../testing/inc/main_test.h"
 	"../inc/LinkedList.h"
 
-1573570265 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\main_test.h
+1573919136 c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\testing\inc\main_test.h
 
-1573577970 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\src\linkedlist.c
+1573923832 source:c:\users\alumno\desktop\programacion-i-recur\clase 20\linkedlist_cascara_v8\src\linkedlist.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

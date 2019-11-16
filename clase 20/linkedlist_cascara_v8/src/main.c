@@ -26,10 +26,12 @@
 
 int main(void)
 {
-        //startTesting(1);  // ll_newLinkedList //bien
-        //startTesting(2);  // ll_len   //bien
-        //startTesting(3);  // getNode - test_getNode//   //bien
-        //startTesting(4);  // addNode - test_addNode*///   MAL
+        startTesting(1);  // ll_newLinkedList //bien
+        startTesting(2);  // ll_len   //bien
+        startTesting(3);  // getNode - test_getNode//   //bien
+        startTesting(4);  // addNode - test_addNode*///   MAL
+
+
         //startTesting(5);  // ll_add//llama al addnote(busca donde enganchar el elemento)   //MAL
         //startTesting(6);  // ll_get   //MAL
         //startTesting(7);  // ll_set//MAL//creo un nuevo nodo/ese nodo apunta al nuevo dato y desengancho el nodo anterior de la lista y lo enlaso con el nmuevo nodo creado(si es el ultimo elemento llamo a add)
