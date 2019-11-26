@@ -372,7 +372,6 @@ int FiltrarLlamada(LinkedList* pArrayListLlamadas)
     return retorno;
 }
 
-
 int saveAsText(char* path , LinkedList* pArrayListLlamadas)
 {
     FILE* pFile = fopen(path,"w");
