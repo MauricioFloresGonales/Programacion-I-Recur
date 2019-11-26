@@ -164,6 +164,7 @@ int test_addNode(LinkedList* this, int nodeIndex,void* pElement)
 int ll_add(LinkedList* lista, void* pElement)
 {
     int returnAux = -1;
+    int len;
 
     if(lista!=NULL)
     {

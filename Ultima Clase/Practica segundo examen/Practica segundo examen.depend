@@ -3,3 +3,40 @@
 	<stdio.h>
 	<stdlib.h>
 
+1574619355 source:c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	<ctype.h>
+	<conio.h>
+
+1574619355 c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\inputs.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1574726091 source:c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1574619355 c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\linkedlist.h
+
+1574724773 source:c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"soporte.h"
+	"Inputs.h"
+
+1574725114 source:c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\soporte.c
+	"Inputs.h"
+	"LinkedList.h"
+	"soporte.h"
+	<string.h>
+
+1574722266 c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\soporte.h
+
