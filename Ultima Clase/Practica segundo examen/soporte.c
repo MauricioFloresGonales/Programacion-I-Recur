@@ -30,7 +30,7 @@ int get_Fecha(eLlamada* this,char* fecha)
     int retorno = -1;
     if(this!=NULL&&fecha!=NULL)
     {
-        *fecha = this->fecha;
+        fecha = this->fecha;
         retorno = 0;
     }
     return retorno;
@@ -95,7 +95,7 @@ int get_Solucionado(eLlamada* this,char* solucionado)
     int retorno = -1;
     if(this!=NULL&&solucionado!=NULL)
     {
-        *solucionado = this->solucionado;
+        solucionado = this->solucionado;
         retorno = 0;
     }
     return retorno;
@@ -195,22 +195,19 @@ eLlamada* llamada_new()
 eLlamada* Llamada_newParametros(char* idLlamadaStr,char* fechaStr,char* numClienteStr,char* idProblemaStr,char* solucionadoStr)
 {
     eLlamada* this = llamada_new();
-    int idLlamada=atoi(idLlamadaStr);
-    char fecha[15];
-    int numCliente = atoi(numClienteStr);
-    int idProblema = atoi(idProblemaStr);
-    char solucionado[3];
-    strcpy(fecha,fechaStr);
-    strcpy(solucionado,solucionadoStr);
 
-    if(this!=NULL)
+    if(idLlamadaStr!=NULL&&fechaStr!=NULL&&numClienteStr!=NULL&&idProblemaStr!=NULL&&solucionadoStr!=NULL)
     {
-        set_IdLlamada(this,idLlamada);
-        set_Fecha(this,fecha);
-        set_NumCliente(this,numCliente);
-        set_IdProblema(this,idProblema);
-        set_Solucionado(this,solucionado);
+        if(this!=NULL)
+        {
+            set_IdLlamada(this,atoi(idLlamadaStr));
+            set_Fecha(this,fechaStr);
+            set_NumCliente(this,atoi(numClienteStr));
+            set_IdProblema(this, atoi(idProblemaStr));
+            set_Solucionado(this,solucionadoStr);
+        }
     }
+
 
     return this;
 }
@@ -226,8 +223,6 @@ int controller_loadFromText(char* path , LinkedList* pArrayListLlamadas)
         retorno = parser_LLamadasFromText(pFile,pArrayListLlamadas);
 
         fclose(pFile);
-
-        retorno = 0;
     }
 
     return retorno;
@@ -239,7 +234,7 @@ int parser_LLamadasFromText(FILE* pFile , LinkedList* pArrayListLlamadas)
     int retorno = -1;
     if(pFile!=NULL)
     {
-        eLlamada* this;
+        eLlamada* this = NULL;
         char idLlamada[51];
         char fecha[51];
         char numCliente[51];
@@ -260,6 +255,4 @@ int parser_LLamadasFromText(FILE* pFile , LinkedList* pArrayListLlamadas)
     }
     return retorno;
 }
-
-
 
