@@ -37,4 +37,11 @@ eLlamada* Llamada_newParametros(char* idLlamadaStr,char* fechaStr,char* numClien
 int controller_loadFromText(char* path , LinkedList* pArrayListEmployee);
 int parser_LLamadasFromText(FILE* pFile , LinkedList* pArrayListEmployee);
 
+void mostrarEmpleado(eLlamada* this);
+void problemas(eLlamada* this);
+void mostrarTodosLosLlamados(LinkedList* pArrayListEmployee);
+
+int FiltrarLlamada(LinkedList* pArrayListLlamadas);
+
+int saveAsText(char* path , LinkedList* pArrayListLlamadas);
 

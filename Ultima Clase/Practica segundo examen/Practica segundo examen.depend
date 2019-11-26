@@ -17,7 +17,7 @@
 	<string.h>
 	<ctype.h>
 
-1574726091 source:c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\linkedlist.c
+1574736125 source:c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\linkedlist.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -25,18 +25,18 @@
 
 1574619355 c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\linkedlist.h
 
-1574724773 source:c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\main.c
+1574735910 source:c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"soporte.h"
 	"Inputs.h"
 
-1574729035 source:c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\soporte.c
+1574735762 source:c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\soporte.c
 	"Inputs.h"
 	"LinkedList.h"
 	"soporte.h"
 	<string.h>
 
-1574722266 c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\soporte.h
+1574735910 c:\users\pipoca\desktop\programacion-i-recur\ultima clase\practica segundo examen\soporte.h
 

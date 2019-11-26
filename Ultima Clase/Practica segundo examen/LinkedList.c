@@ -640,11 +640,11 @@ LinkedList* filter(LinkedList* this,int (*fn)(void*pElement))
     if(this!=NULL && fn!=NULL)
     {
         len = ll_len(this);
+        returnAux = ll_newLinkedList();
         for(i=0;i<len;i++)
         {
             aux=ll_get(this,i);
             resultado = fn(aux);
-            returnAux = ll_newLinkedList();
             if(resultado == 1)
             {
                 ll_add(returnAux,aux);

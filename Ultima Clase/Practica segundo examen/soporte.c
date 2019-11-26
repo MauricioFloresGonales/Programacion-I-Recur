@@ -113,7 +113,7 @@ int set_Solucionado(eLlamada* this,char* solucionado)
 }
 //--------------------------------------------------------------------------------------------------------------------------
 
-int fnid1(void* pElement)
+int fnId1(void* pElement)
 {
     int compara = 0;
     eLlamada* this=(eLlamada*)pElement;
@@ -256,3 +256,153 @@ int parser_LLamadasFromText(FILE* pFile , LinkedList* pArrayListLlamadas)
     return retorno;
 }
 
+void mostrarEmpleado(eLlamada* this)
+{
+    if(this!=NULL)
+    {
+        printf("%5d\t",this->idLlamada);
+        printf("%15s\t",this->fecha);
+        printf("%10d\t",this->numCliente);
+        problemas(this);
+        printf("\t%-15s\n",this->solucionado);
+    }
+}
+
+void problemas(eLlamada* this)
+{
+    int id;
+    if(this!=NULL)
+    {
+        id=this->idProblema;
+        switch(id)
+        {
+        case 1:
+            printf("\tNo enciende PC\t\t");
+            break;
+        case 2:
+            printf("\tNo funciona mouse\t");
+            break;
+        case 3:
+            printf("\tNo funciona teclado\t");
+            break;
+        case 4:
+            printf("\tNo hay internet\t\t");
+            break;
+        default:
+            printf("\tNo funciona teléfono\t");
+            break;
+        }
+    }
+}
+
+void mostrarTodosLosLlamados(LinkedList* pArrayListLlamadas)
+{
+    eLlamada* this;
+    int len;
+    int i;
+
+    len = ll_len(pArrayListLlamadas);
+    printf("Id Llamada   \tfecha\t  Numero de Cliente\t     Problema\t\t    Solucionado\n");
+    for(i=0;i<len;i++)
+    {
+        this =(eLlamada*) ll_get(pArrayListLlamadas,i);
+        mostrarEmpleado(this);
+    }
+}
+
+int FiltrarLlamada(LinkedList* pArrayListLlamadas)
+{
+    LinkedList* this =NULL;
+    int retorno=-1;
+    int opcion;
+    int len;
+    len=ll_len(pArrayListLlamadas);
+    if(pArrayListLlamadas!=NULL&&len>0)
+    {
+
+        while(getInt(&opcion,"\n1.No enciende PC\n2.No funciona mouse\n3.No funciona teclado\n4.No hay internet\n5.No funciona telefono\n6.Salir\n","Solo puedes ingresar nuemeros entre el [1] y [6]",1,6)!=0);
+        switch(opcion)
+        {
+        case 1:
+            this=filter(pArrayListLlamadas,fnId1);
+            if(this!=NULL)
+            {
+            saveAsText("PC.csv",this);
+            printf("Archivo: PC.csv\n");
+            retorno=1;
+            }
+            break;
+        case 2:
+            this=filter(pArrayListLlamadas,fnId2);
+            if(this!=NULL)
+            {
+            saveAsText("MOUSE.csv",this);
+            printf("Archivo: MOUSE.csv\n");
+            retorno=1;
+            }
+            break;
+        case 3:
+            this=filter(pArrayListLlamadas,fnId3);
+            if(this!=NULL)
+            {
+            saveAsText("TECLADO.csv",this);
+            printf("Archivo: TECLADO.csv\n");
+            retorno=1;
+            }
+            break;
+        case 4:
+            this=filter(pArrayListLlamadas,fnId4);
+            if(this!=NULL)
+            {
+            saveAsText("INTERNET.csv",this);
+            printf("Archivo: INTERNET.csv\n");
+            retorno=1;
+            }
+            break;
+        case 5:
+            this=filter(pArrayListLlamadas,fnId5);
+            if(this!=NULL)
+            {
+            saveAsText("TELEFONO.csv",this);
+            printf("Archivo es TELEFONO.csv\n");
+            retorno=1;
+            }
+            break;
+        case 6:
+            printf("Saliendo\n");
+            retorno=0;
+            break;
+        }
+    }
+    ll_clear(pArrayListLlamadas);
+    return retorno;
+}
+
+
+int saveAsText(char* path , LinkedList* pArrayListLlamadas)
+{
+    FILE* pFile = fopen(path,"w");
+    int len;
+    int i;
+    int retorno = -1;
+
+    if(pFile!=NULL)
+    {
+        eLlamada* this;
+
+        len = ll_len(pArrayListLlamadas);
+
+        fprintf(pFile,"idLlamada,fecha,numCliente,idProblema,solucionado\n");
+
+        for(i=0;i<len;i++)
+        {
+            this = ll_get(pArrayListLlamadas,i);
+            fprintf(pFile,"%d,%s,%d,%d,%s\n",this->idLlamada,this->fecha,this->numCliente,this->idProblema,this->solucionado);
+        }
+
+        fclose(pFile);
+        retorno = 0;
+    }
+
+    return retorno;
+}
