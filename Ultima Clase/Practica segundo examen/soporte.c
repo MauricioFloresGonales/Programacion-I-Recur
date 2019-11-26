@@ -319,7 +319,6 @@ int FiltrarLlamada(LinkedList* pArrayListLlamadas)
     len=ll_len(pArrayListLlamadas);
     if(pArrayListLlamadas!=NULL&&len>0)
     {
-
         while(getInt(&opcion,"\n1.No enciende PC\n2.No funciona mouse\n3.No funciona teclado\n4.No hay internet\n5.No funciona telefono\n6.Salir\n","Solo puedes ingresar nuemeros entre el [1] y [6]",1,6)!=0);
         switch(opcion)
         {
@@ -327,45 +326,40 @@ int FiltrarLlamada(LinkedList* pArrayListLlamadas)
             this=filter(pArrayListLlamadas,fnId1);
             if(this!=NULL)
             {
-            saveAsText("PC.csv",this);
-            printf("Archivo: PC.csv\n");
-            retorno=1;
+                saveAsText("PC.csv",this);
+                printf("Archivo: PC.csv\n");
             }
             break;
         case 2:
             this=filter(pArrayListLlamadas,fnId2);
             if(this!=NULL)
             {
-            saveAsText("MOUSE.csv",this);
-            printf("Archivo: MOUSE.csv\n");
-            retorno=1;
+                saveAsText("MOUSE.csv",this);
+                printf("Archivo: MOUSE.csv\n");
             }
             break;
         case 3:
             this=filter(pArrayListLlamadas,fnId3);
             if(this!=NULL)
             {
-            saveAsText("TECLADO.csv",this);
-            printf("Archivo: TECLADO.csv\n");
-            retorno=1;
+                saveAsText("TECLADO.csv",this);
+                printf("Archivo: TECLADO.csv\n");
             }
             break;
         case 4:
             this=filter(pArrayListLlamadas,fnId4);
             if(this!=NULL)
             {
-            saveAsText("INTERNET.csv",this);
-            printf("Archivo: INTERNET.csv\n");
-            retorno=1;
+                saveAsText("INTERNET.csv",this);
+                printf("Archivo: INTERNET.csv\n");
             }
             break;
         case 5:
             this=filter(pArrayListLlamadas,fnId5);
             if(this!=NULL)
             {
-            saveAsText("TELEFONO.csv",this);
-            printf("Archivo es TELEFONO.csv\n");
-            retorno=1;
+                saveAsText("TELEFONO.csv",this);
+                printf("Archivo es TELEFONO.csv\n");
             }
             break;
         case 6:
@@ -382,21 +376,20 @@ int FiltrarLlamada(LinkedList* pArrayListLlamadas)
 int saveAsText(char* path , LinkedList* pArrayListLlamadas)
 {
     FILE* pFile = fopen(path,"w");
+    eLlamada* this = NULL;
     int len;
     int i;
     int retorno = -1;
 
-    if(pFile!=NULL)
+    if(pFile!=NULL && pArrayListLlamadas!=NULL)
     {
-        eLlamada* this;
-
         len = ll_len(pArrayListLlamadas);
 
         fprintf(pFile,"idLlamada,fecha,numCliente,idProblema,solucionado\n");
 
         for(i=0;i<len;i++)
         {
-            this = ll_get(pArrayListLlamadas,i);
+            this = (eLlamada*)ll_get(pArrayListLlamadas,i);
             fprintf(pFile,"%d,%s,%d,%d,%s\n",this->idLlamada,this->fecha,this->numCliente,this->idProblema,this->solucionado);
         }
 
