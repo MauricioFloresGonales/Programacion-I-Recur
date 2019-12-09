@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1575897790 source:c:\users\alumno\desktop\examen prog i mauricio gonzales flores\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+
