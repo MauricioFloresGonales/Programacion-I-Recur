@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1576007470 source:c:\users\pipoca\desktop\examen linkedlist - prototipos\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	<ctype.h>
+	<conio.h>
+
+1576007470 c:\users\pipoca\desktop\examen linkedlist - prototipos\inputs.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1576007470 source:c:\users\pipoca\desktop\examen linkedlist - prototipos\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1576007470 c:\users\pipoca\desktop\examen linkedlist - prototipos\linkedlist.h
+
+1576021529 source:c:\users\pipoca\desktop\examen linkedlist - prototipos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Inputs.h"
+
+1576021300 source:c:\users\pipoca\desktop\examen linkedlist - prototipos\entidad.c
+	"entidad.h"
+
+1576021530 c:\users\pipoca\desktop\examen linkedlist - prototipos\entidad.h
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Inputs.h"
+
