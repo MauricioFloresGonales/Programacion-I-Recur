@@ -1,0 +1,100 @@
+# depslib dependency file v1.0
+1574778818 source:d:\nueva carpeta\examen mauricioflores\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Inputs.h"
+	"Piloto.h"
+
+1574779229 source:d:\nueva carpeta\examen mauricioflores\piloto.c
+	"Piloto.h"
+	<string.h>
+
+1574778781 d:\nueva carpeta\examen mauricioflores\piloto.h
+	"Inputs.h"
+	"LinkedList.h"
+	<string.h>
+
+1574772340 source:d:\nueva carpeta\examen mauricioflores\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	<ctype.h>
+	<conio.h>
+
+1574772340 d:\nueva carpeta\examen mauricioflores\inputs.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1574772340 source:d:\nueva carpeta\examen mauricioflores\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1574772340 d:\nueva carpeta\examen mauricioflores\linkedlist.h
+
+1576007470 source:c:\users\pipoca\desktop\examen-2\segundo examen\examen mauricioflores\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	<ctype.h>
+	<conio.h>
+
+1576007470 c:\users\pipoca\desktop\examen-2\segundo examen\examen mauricioflores\inputs.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1576007470 source:c:\users\pipoca\desktop\examen-2\segundo examen\examen mauricioflores\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1576007470 c:\users\pipoca\desktop\examen-2\segundo examen\examen mauricioflores\linkedlist.h
+
+1576007470 source:c:\users\pipoca\desktop\examen-2\segundo examen\examen mauricioflores\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Inputs.h"
+	"Piloto.h"
+
+1576007470 c:\users\pipoca\desktop\examen-2\segundo examen\examen mauricioflores\piloto.h
+	"Inputs.h"
+	"LinkedList.h"
+	<string.h>
+
+1576007470 source:c:\users\pipoca\desktop\examen-2\segundo examen\examen mauricioflores\piloto.c
+	"Piloto.h"
+	<string.h>
+
+1576007470 source:c:\users\pipoca\desktop\programacion-i-recur\examen-2-linkedlist\segundo examen\examen mauricioflores\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	<ctype.h>
+	<conio.h>
+
+1576007470 c:\users\pipoca\desktop\programacion-i-recur\examen-2-linkedlist\segundo examen\examen mauricioflores\inputs.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1576007470 source:c:\users\pipoca\desktop\programacion-i-recur\examen-2-linkedlist\segundo examen\examen mauricioflores\piloto.c
+	"Piloto.h"
+	<string.h>
+
+1576007470 c:\users\pipoca\desktop\programacion-i-recur\examen-2-linkedlist\segundo examen\examen mauricioflores\piloto.h
+	"Inputs.h"
+	"LinkedList.h"
+	<string.h>
+
