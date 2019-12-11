@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1576075557 source:d:\nueva carpeta\mauricio gonzales flores\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	<ctype.h>
+	<conio.h>
+
+1576075557 d:\nueva carpeta\mauricio gonzales flores\inputs.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1576081302 source:d:\nueva carpeta\mauricio gonzales flores\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1576081288 d:\nueva carpeta\mauricio gonzales flores\linkedlist.h
+
+1576086545 source:d:\nueva carpeta\mauricio gonzales flores\carrera.c
+	"carrera.h"
+
+1576086238 d:\nueva carpeta\mauricio gonzales flores\carrera.h
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Inputs.h"
+	"time.h"
+
+1576083775 source:d:\nueva carpeta\mauricio gonzales flores\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Inputs.h"
+	"carrera.h"
+	"time.h"
+
