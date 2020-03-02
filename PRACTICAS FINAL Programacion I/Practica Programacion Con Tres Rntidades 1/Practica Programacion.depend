@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1582582395 source:c:\users\pipoca\desktop\practica programacion\main.c
+	<stdio.h>
+	<stdlib.h>
+	"eEntidad.h"
+
+1582918809 c:\users\pipoca\desktop\practica programacion\eentidad.h
+
+1582582266 source:c:\users\pipoca\desktop\practica programacion\eentidad.c
+	<stdio.h>
+	<stdlib.h>
+	"eEntidad.h"
+	"string.h"
+
+1582991293 source:c:\users\pipoca\desktop\practicas\practica programacion\eentidad.c
+	<stdio.h>
+	<stdlib.h>
+	"eEntidad.h"
+	"string.h"
+
+1582990498 c:\users\pipoca\desktop\practicas\practica programacion\eentidad.h
+
+1582991406 source:c:\users\pipoca\desktop\practicas\practica programacion\main.c
+	<stdio.h>
+	<stdlib.h>
+	"eEntidad.h"
+
+1583096378 source:c:\users\juan\desktop\practica programacion\eentidad.c
+	<stdio.h>
+	<stdlib.h>
+	"eEntidad.h"
+	"string.h"
+
+1583095321 c:\users\juan\desktop\practica programacion\eentidad.h
+
+1583096476 source:c:\users\juan\desktop\practica programacion\main.c
+	<stdio.h>
+	<stdlib.h>
+	"eEntidad.h"
+
+1583097065 source:c:\users\pipoca\desktop\practica programacion 1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"eEntidad.h"
+
+1583095321 c:\users\pipoca\desktop\practica programacion 1\eentidad.h
+
+1583094812 source:c:\users\pipoca\desktop\practica programacion 1\eentidad.c
+	<stdio.h>
+	<stdlib.h>
+	"eEntidad.h"
+	"string.h"
+

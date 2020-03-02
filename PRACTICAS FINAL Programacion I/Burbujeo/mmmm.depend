@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1583111508 source:c:\users\pipoca\desktop\practicas\mmmm\main.c
+	<stdio.h>
+	<stdlib.h>
+	"eEntidad.h"
+
+1583093309 source:c:\users\pipoca\desktop\practicas\mmmm\eentidad.c
+	"eEntidad.h"
+
+1583093325 c:\users\pipoca\desktop\practicas\mmmm\eentidad.h
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+

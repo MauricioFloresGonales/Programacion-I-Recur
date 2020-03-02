@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1582920679 source:c:\users\pipoca\desktop\practicas\practicaprimeraparte\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+
